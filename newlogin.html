@@ -1,33 +1,58 @@
-<!-- Button to open the modal login form -->
-<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+<div class="materialContainer">
 
-<!-- The Modal -->
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'"
-class="close" title="Close Modal">&times;</span>
 
-  <!-- Modal Content -->
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
-    </div>
+   <div class="box">
 
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <div class="title">LOGIN</div>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <div class="input">
+         <label for="name">Username</label>
+         <input type="text" name="name" id="name">
+         <span class="spin"></span>
+      </div>
 
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
+      <div class="input">
+         <label for="pass">Password</label>
+         <input type="password" name="pass" id="pass">
+         <span class="spin"></span>
+      </div>
 
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
+      <div class="button login">
+         <button><span>GO</span> <i class="fa fa-check"></i></button>
+      </div>
+
+      <a href="" class="pass-forgot">Forgot your password?</a>
+
+   </div>
+
+   <div class="overbox">
+      <div class="material-button alt-2"><span class="shape"></span></div>
+
+      <div class="title">REGISTER</div>
+
+      <div class="input">
+         <label for="regname">Username</label>
+         <input type="text" name="regname" id="regname">
+         <span class="spin"></span>
+      </div>
+
+      <div class="input">
+         <label for="regpass">Password</label>
+         <input type="password" name="regpass" id="regpass">
+         <span class="spin"></span>
+      </div>
+
+      <div class="input">
+         <label for="reregpass">Repeat Password</label>
+         <input type="password" name="reregpass" id="reregpass">
+         <span class="spin"></span>
+      </div>
+
+      <div class="button">
+         <button><span>NEXT</span></button>
+      </div>
+
+
+   </div>
+
 </div>
